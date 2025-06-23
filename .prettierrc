@@ -1,0 +1,19 @@
+{
+  "trailingComma": "es5",
+  "tabWidth": 2,
+  "semi": false,
+  "singleQuote": true,
+  "importOrder": [
+    "^.+\\.(css|sass|scss|less)$",
+    "^(react|react-dom|next)(/.*|$)",
+    "^[a-zA-Z].*",
+    "^@[a-zA-Z].*",
+    "^@/.*",
+    "^[./]"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true,
+  "plugins": [
+    "@trivago/prettier-plugin-sort-imports"
+  ]
+}
