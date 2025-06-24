@@ -1,8 +1,9 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-import path from "path";
+import path from 'path'
+import { defineConfig } from 'vite'
 
-const DEV_SERVER_PORT = 3000;
+import react from '@vitejs/plugin-react'
+
+const DEV_SERVER_PORT = 3000
 
 // https://vite.dev/config/
 export default defineConfig(() => ({
@@ -10,16 +11,17 @@ export default defineConfig(() => ({
     port: DEV_SERVER_PORT,
     // В dev-режиме пробрасываем запросы к /mockServiceWorker.js в папку src/mocks
     proxy: {
-      "/mockServiceWorker.js": {
+      '/mockServiceWorker.js': {
         target: `http://localhost:${DEV_SERVER_PORT}`,
-        rewrite: () => path.resolve(__dirname, "src/mocks/mockServiceWorker.js"),
+        rewrite: () =>
+          path.resolve(__dirname, 'src/mocks/mockServiceWorker.js'),
       },
     },
   },
   plugins: [react()],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "src"),
+      '@': path.resolve(__dirname, 'src'),
     },
   },
-}));
+}))
