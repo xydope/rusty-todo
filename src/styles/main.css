@@ -1,0 +1,40 @@
+@import url("./_normalize.css");
+@import url("./_fonts.css");
+@import url("./_vars.css");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  background-color: var(--color-background);
+  background-image: var(--background-image-lg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto;
+
+  min-height: 100vh;
+  color: var(--color-text);
+  margin: 0;
+  padding: clamp(20px, 8vw, 46px) clamp(16px, 6vw, 24px);
+}
+
+html, body {
+  min-width: 320px;
+}
+
+@media (max-width: 375px) {
+  body {
+    background-image: var(--background-image-sm);
+    background-size: auto;
+  }
+}
+
+@media (min-width: 1441px) {
+  body {
+    background-image: var(--background-image-lg);
+    background-size: contain;
+  }
+}

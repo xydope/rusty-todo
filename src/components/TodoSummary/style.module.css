@@ -1,0 +1,29 @@
+.summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-text-secondary);
+  padding: clamp(16px, 4vw, 20px);
+  border-radius: 0 0 5px 5px;
+  background: var(--color-card-bg);
+  gap: 16px;
+}
+
+.clearButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-text-secondary);
+  font-size: 12px;
+  transition: color 0.2s ease;
+  white-space: nowrap;
+}
+
+.clearButton:hover {
+  color: var(--color-text);
+}
+
+.counter {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}

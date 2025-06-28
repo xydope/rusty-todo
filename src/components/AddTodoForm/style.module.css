@@ -1,0 +1,11 @@
+.addTodoForm {
+  background: var(--color-card-bg);
+  margin-bottom: 15px;
+  padding: 13px 20px;
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+}
+    

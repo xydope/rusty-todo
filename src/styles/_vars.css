@@ -1,32 +1,57 @@
 :root {
+  /* Typography */
   --font-family: 'Josefin Sans', sans-serif;
-  --font-size-default: 18px;
+  --font-size: 18px;
 
+  /* Layout */
   --screen-sm: 375px;
   --screen-lg: 1440px;
 
-  --box-shadow: 0px 12px 20px 0px rgba(0, 0, 0, 0.25);
+  --background-mobile-light: url('../assets/images/bg-mobile-light.jpg');
+  --background-mobile-dark: url('../assets/images/bg-mobile-dark.jpg');
+  --background-desktop-light: url('../assets/images/bg-desktop-light.jpg');
+  --background-desktop-dark: url('../assets/images/bg-desktop-dark.jpg');
 
-  --color-white: #fff;
+  --box-shadow: 4px 4px 23px 0px rgba(0, 0, 0, 0.2);
 
-  /*Light Theme*/
+  /* Primary Colors */
+  --bright-blue: hsl(220, 98%, 61%);
+  --check-gradient: linear-gradient(135deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  
+  /* Light Theme Colors */
   --very-light-gray: hsl(0, 0%, 98%);
   --very-light-grayish-blue: hsl(236, 33%, 92%);
   --light-grayish-blue: hsl(233, 11%, 84%);
   --dark-grayish-blue: hsl(236, 9%, 61%);
   --very-dark-grayish-blue: hsl(235, 19%, 35%);
 
-  /*Dark Theme*/
+  /* Dark Theme Colors */
   --very-dark-blue: hsl(235, 21%, 11%);
   --very-dark-desaturated-blue: hsl(235, 24%, 19%);
-  --light-grayish-blue: hsl(234, 39%, 85%);
+  --light-grayish-blue-dark: hsl(234, 39%, 85%);
   --light-grayish-blue-hover: hsl(236, 33%, 92%);
-  --dark-grayish-blue: hsl(234, 11%, 52%);
-  --very-dark-grayish-blue: hsl(233, 14%, 35%);
-  --very-dark-grayish-blue: hsl(237, 14%, 26%);
+  --dark-grayish-blue-dark: hsl(234, 11%, 52%);
+  --very-dark-grayish-blue-dark: hsl(233, 14%, 35%);
+  --very-dark-grayish-blue-dark-2: hsl(237, 14%, 26%);
 
-  --color-divider: var(--color-grayish-blue-500);
-  --color-text-primary: var(--color-grayish-blue-100);
-  --color-text-secondary: var(--color-grayish-blue-400);
-  --color-background: var(--color-grayish-blue-700)
+  /* Default theme (dark) */
+  --color-background: var(--very-dark-blue);
+  --color-card-bg: var(--very-dark-desaturated-blue);
+  --color-text: var(--light-grayish-blue-dark);
+  --color-text-secondary: var(--very-dark-grayish-blue-dark);
+  --color-border: var(--very-dark-grayish-blue-dark-2);
+  --color-checkbox-border: var(--very-dark-grayish-blue-dark);
+  --background-image-sm: var(--background-mobile-dark);
+  --background-image-lg: var(--background-desktop-dark);
+}
+
+[data-theme="light"] {
+  --color-background: var(--very-light-gray);
+  --color-card-bg: white;
+  --color-text: var(--very-dark-grayish-blue);
+  --color-text-secondary: var(--dark-grayish-blue);
+  --color-border: var(--light-grayish-blue);
+  --color-checkbox-border: var(--light-grayish-blue);
+  --background-image-sm: var(--background-mobile-light);
+  --background-image-lg: var(--background-desktop-light);
 }

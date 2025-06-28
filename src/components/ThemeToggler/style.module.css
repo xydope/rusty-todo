@@ -1,0 +1,17 @@
+.themeToggleIcon {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  border-radius: 3px;
+  padding: 4px;
+}
+
+.themeToggleIcon:hover {
+  transform: scale(1.1);
+}
+
+.themeToggleIcon:focus-visible {
+  outline: 2px solid var(--bright-blue);
+  outline-offset: 2px;
+}

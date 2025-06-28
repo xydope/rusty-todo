@@ -1,0 +1,6 @@
+.todoList {
+  margin-bottom: 15px;
+  box-shadow: var(--box-shadow);
+  border-radius: 5px;
+  overflow: hidden;
+}
